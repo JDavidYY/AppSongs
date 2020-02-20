@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductosApp</title>
+    <!--Bootstrap Slute Style-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <!-- Navegación-->
+    <nav class="navbar navbar-primary bg-primary">
+        <a href="index.htm" class="navbar-brand">Nuestras canciones <3</a>
+    </nav>
+
+    <!-- Aplicación-->
+    <div class="container">   
+        <div id= "App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-center">Agregar canción</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formSong">
+                            <div class="form-group">
+                                <input class="btn btn-block" type="text" id="titulo" placeholder="Agregar nombre de la canción">
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-block" type="text" id="artista" placeholder="Agregar nombre del artista">
+                            
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-block" type="date" id="fecha" placeholder="Agregar fecha">
+                            
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block" style=background-color:blueviolet> Registrar canción</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="songList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Songs.js"></script>
+</body>
+</html>
